@@ -1,0 +1,24 @@
+func:
+1:	 a := 23
+2:	 return
+
+myfunc:
+3:	 t_1 := t_1 + a
+4:	 myfunc := t_1
+5:	 return
+
+example:
+6:	 b := 3
+7:	 param b
+8:	 call myfunc,1
+9:	 a := myfunc
+10:	 if a < b goto 12
+11:	 goto 14
+12:	 c := 10
+13:	 goto 10
+14:	 if a < b goto 16
+15:	 goto 18
+16:	 c := 2
+17:	 goto 19
+18:	 c := 5
+19:	 halt
